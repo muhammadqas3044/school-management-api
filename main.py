@@ -15,16 +15,16 @@ class Result(BaseModel):
 
 # ----------  DATA ----------
 students = {
-    1: {"name": "Ali", "roll_no": 101, "class_name": "10th"},
-    2: {"name": "Sara", "roll_no": 102, "class_name": "10th"},
-    3: {"name": "Ahmed", "roll_no": 103, "class_name": "9th"},
-    4: {"name": "Furqan", "roll_no": 103, "class_name": "9th"},
-    5: {"name": "Daniyal", "roll_no": 103, "class_name": "9th"},
-    6: {"name": "Hamza", "roll_no": 103, "class_name": "9th"},
-    7: {"name": "Maaz", "roll_no": 103, "class_name": "9th"},
-    8: {"name": "Ibrahim", "roll_no": 103, "class_name": "9th"},
-    9: {"name": "Saad", "roll_no": 103, "class_name": "9th"},
-    10: {"name": "Muzammil", "roll_no": 103, "class_name": "9th"}
+    1: {"name": "Ali", "roll_no": 1, "class_name": "10th"},
+    2: {"name": "Sara", "roll_no": 2, "class_name": "10th"},
+    3: {"name": "Ahmed", "roll_no": 3, "class_name": "9th"},
+    4: {"name": "Furqan", "roll_no": 4, "class_name": "9th"},
+    5: {"name": "Daniyal", "roll_no": 5, "class_name": "9th"},
+    6: {"name": "Hamza", "roll_no": 6, "class_name": "9th"},
+    7: {"name": "Maaz", "roll_no": 7, "class_name": "9th"},
+    8: {"name": "Ibrahim", "roll_no": 8, "class_name": "9th"},
+    9: {"name": "Saad", "roll_no": 9, "class_name": "9th"},
+    10: {"name": "Muzammil", "roll_no": 10, "class_name": "9th"}
 }
 
 results = {
@@ -127,4 +127,5 @@ def add_result(roll_no: int, result: Result):
     if roll_no not in students:
         return {"message": "Student not found"}
     results[roll_no].append(result.dict())
+
     return {"message": "Result added", "results": results[roll_no]}
