@@ -1,7 +1,7 @@
 # 🏫 School Management API (FastAPI)
 
 A simple **School Management API** built using **FastAPI**.  
-This project demonstrates basic CRUD operations for students and their results using **dictionary-based storage** (no database required).
+This project demonstrates basic CRUD operations for students and their results using **dictionary based storage** (no database required).
 
 ---
 
@@ -17,7 +17,7 @@ This project demonstrates basic CRUD operations for students and their results u
 
 ## 🛠 Tech Stack
 - **Backend:** FastAPI (Python)
-- **Data Storage:** Dictionary (in-memory)
+- **Data Storage:** Dictionary (in memory)
 - **Tools:** Uvicorn (for running server), Pydantic (data validation)
 
 ---
